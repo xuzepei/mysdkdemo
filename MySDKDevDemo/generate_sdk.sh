@@ -1,16 +1,18 @@
+# Type a script or drag a script file from your workspace to insert its path.
 #!/bin/sh
 # 如果脚本放进Xcode的run script中运行，可以不设置这个PROJECT_NAME，
 # 因为它同时也是 Xcode 项目的全局变量，用于获取项目名。
-PROJECT_NAME=MySDK
+#PROJECT_NAME=MySDK
 
 # 获取项目根目录
 #PROJECT_DIR="/Users/xuzepei/mysdkdemo/MySDKDevDemo"
 PROJECT_DIR="."
+
 # 输出当前项目目录
 echo "#### 1. project directory: $PROJECT_DIR"
 
 # 我们framework的名字是和项目名一样的，如果不一样的的话，可以单独设置。
-framework_name=$PROJECT_NAME
+framework_name=MySDK
 
 # 导出xcframework的路径
 output_path=${PROJECT_DIR}/${framework_name}_XCFramework
@@ -26,7 +28,7 @@ echo "#### 3. clean old files"
 
 # 删除旧版，然后创建新版
 rm -r $output_path
-mkdir $output_path 
+mkdir $output_path
 
 echo "#### 4. start buliding for simulator"  
 
@@ -37,9 +39,7 @@ xcodebuild archive \
 -archivePath $simulator_archive_path \
 SKIP_INSTALL=NO
 
-
-
-echo "#### 5. start buliding for device"  
+echo "#### 5. start buliding for device"
 
 # 打包真机
 xcodebuild archive \
@@ -58,13 +58,13 @@ xcodebuild -create-xcframework \
 -output $output_path/$framework_name.xcframework
 
 
-echo "#### 7. clean archive files" 
+echo "#### 7. clean archive files"
 
 # 打包完成后，存档就失去作用，只作为中间打包过程使用。
 rm -r $simulator_archive_path $iOS_device_archive_path
 
-echo "#### 8. open XCFramework directory"
 
+echo "#### 8. open XCFramework directory"
 # 打开 XCFramework 所在的目录
 open $output_path
 
@@ -75,10 +75,11 @@ SOURCE_PATH="${output_path}/${framework_name}.xcframework"
 # 目标文件路径
 DEST_PATH="../${framework_name}.xcframework"
 
+echo "#### SOURCE_PATH: ${SOURCE_PATH}"
+echo "#### DEST_PATH: ${DEST_PATH}"
+
 # 拷贝并替换文件（使用 -f 强制覆盖）
 rm -rf "$DEST_PATH"
 cp -rf "$SOURCE_PATH" "$DEST_PATH"
 
 echo "#### 10. ${framework_name}.xcframework copied and replaced successfully. 🍺🍺🍺"
-
-

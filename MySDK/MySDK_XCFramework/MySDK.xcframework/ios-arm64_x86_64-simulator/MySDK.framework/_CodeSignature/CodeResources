@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/MySDK.h</key>
 		<data>
-		tlammu9TW8bBqmbs/nkeExVLhc0=
+		h/8jFfttRwbIykmyUEPMQeinCz0=
 		</data>
 		<key>Headers/Test.h</key>
 		<data>
-		zKVNQNewgHEThghCOehjl5v34x4=
+		M3/eEQ6LHAT1NMrmJ3xLPx2Q2v4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -27,14 +27,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6DwaKFnYTtOe2TwHAEiIqNKm3G7HBnQqF9Ui7S8CQMI=
+			aft6VnOwYUD5PpKpbPChpcGMJJWgr56wVyp8WUT9l8s=
 			</data>
 		</dict>
 		<key>Headers/Test.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0pfwI1mRfp3JZozKvIP91akG0us8KjSOftz7w4aQfk=
+			4Q/IIfJXjyOpMggj2CPqs1xYt8eInFKSQCGxHykiQFE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
