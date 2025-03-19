@@ -29,11 +29,19 @@
 
 }
 
-- (void)showToast:(UIViewController*)viewController
+- (void)showToast:(UIViewController*)vc message:(NSString*)msg
 {
-    [viewController.view makeToast:@"This is a toast with duration"
+    if(msg.length != 0) {
+        [vc.view makeToast:msg
+                    duration:3.0
+                    position:CSToastPositionCenter];
+    }
+}
+
++ (void)showToast:(UIViewController*)vc
+{
+    [vc.view makeToast:@"This is a toast from class method"
                 duration:3.0
                 position:CSToastPositionCenter];
 }
-
 @end

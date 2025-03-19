@@ -12,7 +12,8 @@
 
 - (void)showTestMessage;
 - (void)showTestAlert:(UIViewController*)viewController;
-- (void)showToast:(UIViewController*)viewController;
+- (void)showToast:(UIViewController*)vc message:(NSString*)msg;
++ (void)showToast:(UIViewController*)vc;
 
 @end
 

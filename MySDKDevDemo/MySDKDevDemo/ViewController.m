@@ -26,7 +26,8 @@
     Test* t = [Test new];
     //[t showTestAlert:self];
     
-    [t showToast:self];
+    [Test showToast:self];
+
 }
 
 
