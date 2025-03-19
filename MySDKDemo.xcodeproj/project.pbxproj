@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095E0C462D8AB0C800FCC1FA /* MySDKWork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095E0C452D8AB0C800FCC1FA /* MySDKWork.xcframework */; };
+		095E0C472D8AB0C800FCC1FA /* MySDKWork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 095E0C452D8AB0C800FCC1FA /* MySDKWork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09D56B782D6C711F002477D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D56B6B2D6C711F002477D7 /* AppDelegate.m */; };
 		09D56B792D6C711F002477D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D56B702D6C711F002477D7 /* main.m */; };
 		09D56B7A2D6C711F002477D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D56B742D6C711F002477D7 /* SceneDelegate.m */; };
@@ -14,19 +16,17 @@
 		09D56B7C2D6C711F002477D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D56B6C2D6C711F002477D7 /* Assets.xcassets */; };
 		09D56B7E2D6C711F002477D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D56B6F2D6C711F002477D7 /* LaunchScreen.storyboard */; };
 		09D56B7F2D6C711F002477D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D56B722D6C711F002477D7 /* Main.storyboard */; };
-		09D56B8B2D6C7A27002477D7 /* MySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */; };
-		09D56B8C2D6C7A27002477D7 /* MySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B87B0E2C7399B10E5006FCFA /* Pods_MySDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02205A41D7FED8F27E5EF307 /* Pods_MySDKDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		09D56B8D2D6C7A27002477D7 /* Embed Frameworks */ = {
+		095E0C482D8AB0C800FCC1FA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				09D56B8C2D6C7A27002477D7 /* MySDK.xcframework in Embed Frameworks */,
+				095E0C472D8AB0C800FCC1FA /* MySDKWork.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		02205A41D7FED8F27E5EF307 /* Pods_MySDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		095E0C452D8AB0C800FCC1FA /* MySDKWork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MySDKWork.xcframework; sourceTree = "<group>"; };
 		09D56B4D2D6C6F5C002477D7 /* MySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D56B6A2D6C711F002477D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09D56B6B2D6C711F002477D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		09D56B742D6C711F002477D7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		09D56B752D6C711F002477D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		09D56B762D6C711F002477D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MySDK.xcframework; sourceTree = "<group>"; };
 		58BC124FAF3E6CBF5C4EFCD7 /* Pods-MySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6CDBAD72450F124C1ED3D42D /* Pods-MySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.release.xcconfig"; path = "Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,8 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D56B8B2D6C7A27002477D7 /* MySDK.xcframework in Frameworks */,
 				B87B0E2C7399B10E5006FCFA /* Pods_MySDKDemo.framework in Frameworks */,
+				095E0C462D8AB0C800FCC1FA /* MySDKWork.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 		09D56B892D6C7A27002477D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */,
+				095E0C452D8AB0C800FCC1FA /* MySDKWork.xcframework */,
 				02205A41D7FED8F27E5EF307 /* Pods_MySDKDemo.framework */,
 			);
 			name = Frameworks;
@@ -130,8 +130,8 @@
 				09D56B492D6C6F5C002477D7 /* Sources */,
 				09D56B4A2D6C6F5C002477D7 /* Frameworks */,
 				09D56B4B2D6C6F5C002477D7 /* Resources */,
-				09D56B8D2D6C7A27002477D7 /* Embed Frameworks */,
 				791B3E3FB2734AE70F75B3FD /* [CP] Embed Pods Frameworks */,
+				095E0C482D8AB0C800FCC1FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

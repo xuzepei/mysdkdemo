@@ -13,7 +13,7 @@ echo "#### 1. project directory: $PROJECT_DIR"
 
 # 我们framework的名字是和项目名一样的，如果不一样的的话，可以单独设置。
 project_name=MySDKDevDemo
-framework_name=MySDK
+framework_name=MySDKWork
 
 # 导出xcframework的路径
 output_path=${PROJECT_DIR}/${framework_name}_XCFramework

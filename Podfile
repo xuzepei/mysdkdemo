@@ -6,7 +6,7 @@ target 'MySDKDemo' do
   use_frameworks!
 
   # Pods for MySDKDemo
-  pod 'Toast','4.0.0'
+  pod 'Toast','4.1.1'
 
 end
 

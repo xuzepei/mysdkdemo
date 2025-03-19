@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <MySDK/MySDK.h>
+#import <MySDKWork/MySDKWork.h>
 
 @interface ViewController ()
 - (IBAction)clickedCallSDKBtn:(id)sender;
