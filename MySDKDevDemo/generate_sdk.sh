@@ -12,6 +12,7 @@ PROJECT_DIR="."
 echo "#### 1. project directory: $PROJECT_DIR"
 
 # 我们framework的名字是和项目名一样的，如果不一样的的话，可以单独设置。
+project_name=MySDKDevDemo
 framework_name=MySDK
 
 # 导出xcframework的路径
@@ -32,8 +33,9 @@ mkdir $output_path
 
 echo "#### 4. start buliding for simulator"  
 
-# 打包模拟器
+# 打包模拟器, 如果使用了Pod则需要添加-workspace $project_name.xcworkspace \
 xcodebuild archive \
+-workspace $project_name.xcworkspace \
 -scheme $framework_name \
 -destination "generic/platform=iOS Simulator" \
 -archivePath $simulator_archive_path \
@@ -41,8 +43,9 @@ SKIP_INSTALL=NO
 
 echo "#### 5. start buliding for device"
 
-# 打包真机
+# 打包真机, 如果使用了Pod则需要添加-workspace $project_name.xcworkspace \
 xcodebuild archive \
+-workspace $project_name.xcworkspace \
 -scheme $framework_name \
 -destination "generic/platform=iOS" \
 -archivePath $iOS_device_archive_path \

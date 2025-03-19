@@ -6,6 +6,7 @@
 //
 
 #import "Test.h"
+#import <Toast/UIView+Toast.h>
 
 @implementation Test
 
@@ -26,6 +27,13 @@
         [viewController presentViewController:alertController animated:YES completion:nil];
     }
 
+}
+
+- (void)showToast:(UIViewController*)viewController
+{
+    [viewController.view makeToast:@"This is a toast with duration"
+                duration:3.0
+                position:CSToastPositionCenter];
 }
 
 @end

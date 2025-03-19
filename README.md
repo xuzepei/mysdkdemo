@@ -16,3 +16,7 @@
 1. 打开MySDKDevDemo目录下的工程进行SDK开发和测试。
 2. 完成SDK开发后，运行同目录下的generate_sdk.sh脚本生成MySDK.xcframework，并打开存放的目录
 
+```
+1. chmod +x generate_sdk.sh （默认情况下，脚本可能没有权限）
+2. ./generate_sdk.sh 
+```

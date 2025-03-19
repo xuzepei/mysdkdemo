@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		09D56B7F2D6C711F002477D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D56B722D6C711F002477D7 /* Main.storyboard */; };
 		09D56B8B2D6C7A27002477D7 /* MySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */; };
 		09D56B8C2D6C7A27002477D7 /* MySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B87B0E2C7399B10E5006FCFA /* Pods_MySDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02205A41D7FED8F27E5EF307 /* Pods_MySDKDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02205A41D7FED8F27E5EF307 /* Pods_MySDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D56B4D2D6C6F5C002477D7 /* MySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D56B6A2D6C711F002477D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09D56B6B2D6C711F002477D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		09D56B752D6C711F002477D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		09D56B762D6C711F002477D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MySDK.xcframework; sourceTree = "<group>"; };
+		58BC124FAF3E6CBF5C4EFCD7 /* Pods-MySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6CDBAD72450F124C1ED3D42D /* Pods-MySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.release.xcconfig"; path = "Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D56B8B2D6C7A27002477D7 /* MySDK.xcframework in Frameworks */,
+				B87B0E2C7399B10E5006FCFA /* Pods_MySDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,7 @@
 				09D56B772D6C711F002477D7 /* MySDKDemo */,
 				09D56B892D6C7A27002477D7 /* Frameworks */,
 				09D56B4E2D6C6F5C002477D7 /* Products */,
+				5B5CC7D926CF77CAC8AD7929 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +105,18 @@
 			isa = PBXGroup;
 			children = (
 				09D56B8A2D6C7A27002477D7 /* MySDK.xcframework */,
+				02205A41D7FED8F27E5EF307 /* Pods_MySDKDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B5CC7D926CF77CAC8AD7929 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58BC124FAF3E6CBF5C4EFCD7 /* Pods-MySDKDemo.debug.xcconfig */,
+				6CDBAD72450F124C1ED3D42D /* Pods-MySDKDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,18 +126,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09D56B652D6C6F5E002477D7 /* Build configuration list for PBXNativeTarget "MySDKDemo" */;
 			buildPhases = (
+				0F647BCEA5BA2FC90DA6C4D6 /* [CP] Check Pods Manifest.lock */,
 				09D56B492D6C6F5C002477D7 /* Sources */,
 				09D56B4A2D6C6F5C002477D7 /* Frameworks */,
 				09D56B4B2D6C6F5C002477D7 /* Resources */,
 				09D56B8D2D6C7A27002477D7 /* Embed Frameworks */,
+				791B3E3FB2734AE70F75B3FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MySDKDemo;
-			packageProductDependencies = (
-			);
 			productName = MySDKDemo;
 			productReference = 09D56B4D2D6C6F5C002477D7 /* MySDKDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +157,7 @@
 				};
 			};
 			buildConfigurationList = 09D56B482D6C6F5C002477D7 /* Build configuration list for PBXProject "MySDKDemo" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -149,7 +166,6 @@
 			);
 			mainGroup = 09D56B442D6C6F5C002477D7;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 09D56B4E2D6C6F5C002477D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,6 +187,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F647BCEA5BA2FC90DA6C4D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		791B3E3FB2734AE70F75B3FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09D56B492D6C6F5C002477D7 /* Sources */ = {
@@ -208,6 +266,7 @@
 /* Begin XCBuildConfiguration section */
 		09D56B662D6C6F5E002477D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BC124FAF3E6CBF5C4EFCD7 /* Pods-MySDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -215,6 +274,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MySDKDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -238,6 +298,7 @@
 		};
 		09D56B672D6C6F5E002477D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDBAD72450F124C1ED3D42D /* Pods-MySDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -245,6 +306,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MySDKDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

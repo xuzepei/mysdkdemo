@@ -24,7 +24,9 @@
     NSLog(@"#### clickedCallSDKBtn");
     
     Test* t = [Test new];
-    [t showTestAlert:self];
+    //[t showTestAlert:self];
+    
+    [t showToast:self];
 }
 
 

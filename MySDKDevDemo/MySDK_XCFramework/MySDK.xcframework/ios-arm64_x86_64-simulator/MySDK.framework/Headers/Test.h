@@ -12,6 +12,7 @@
 
 - (void)showTestMessage;
 - (void)showTestAlert:(UIViewController*)viewController;
+- (void)showToast:(UIViewController*)viewController;
 
 @end
 
